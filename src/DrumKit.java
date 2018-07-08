@@ -49,7 +49,7 @@ panel.setVisible(true);
 String drum = "drum jmarolt.jpg";
 		// 9. Edit the next line to use your String variable
 		// drumLabelWithImage = createLabelImage(drumImageString);
-
+//drumLabelWithImgae = createLabelImage("drum jmarolt.jpg");
 		// 10. Add the image to the panel
 
 		// 11. Set the layout of the panel to "new GridLayout()"
