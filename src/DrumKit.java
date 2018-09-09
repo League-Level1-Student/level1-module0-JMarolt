@@ -31,13 +31,13 @@ public class DrumKit implements MouseListener {
 				// 2. Make the frame visible and
 		// set its default close operation to JFrame.EXIT_ON_CLOSE
 frame.setVisible(true);
-
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
 		// 3. Set the size of the frame
 		frame.setSize(1000, 1000);
 		// 4. Set the title of the frame
-frame.setTitle("JFrame Title");
+frame.setTitle("Title");
 		// 5. Make a JPanel variable and initialize it using "new JPanel().
 JPanel panel = new JPanel();
 		// 6. Add the panel to the frame. (The panel is invisible.)
@@ -51,9 +51,9 @@ String drum = "drum jmarolt.jpg";
 		// drumLabelWithImage = createLabelImage(drumImageString);
 //drumLabelWithImgae = createLabelImage("drum jmarolt.jpg");
 		// 10. Add the image to the panel
-
+panel.add(null, "drum jmarolt.jpg");
 		// 11. Set the layout of the panel to "new GridLayout()"
-
+//panel.setLayout();
 		// 12. call the pack() method on the frame. Run your program. Do you see your
 		// drum image?
 
