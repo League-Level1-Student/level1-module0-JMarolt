@@ -54,13 +54,15 @@ a.setTitle("Demanding Buttons");
 	public void actionPerformed(ActionEvent arg0) {
 		JButton buttonPressed = (JButton) arg0.getSource();
 		if(buttonPressed == c) {
+			c.addActionListener(null);
 			d.setText("No, click Me!");
-			d.setSize(big);
-			c.setSize(small);
+			d.setPreferredSize(big);
+			c.setPreferredSize(small);
 		}else if(buttonPressed == d) {
+			d.addActionListener(null);
 			c.setText("No, click Me!");
-			c.setSize(big);
-			d.setSize(small);
+			c.setPreferredSize(big);
+			d.setPreferredSize(small);
 		}else {
 			
 		}
@@ -75,7 +77,7 @@ a.setTitle("Demanding Buttons");
 		/* If the buttonPressed was the rightButton, do the opposite. */
 		
 
-		a.pack();
+		//a.pack();
 	}
 }
 

@@ -29,6 +29,7 @@ JPanel b = new JPanel();
 		//6. Create and initialize an object of the JLabel class
 JLabel c = new JLabel();
 		//7. Set the text of the JLabel to a lovely greeting.
+
 c.setText("Hi");
 		//8. Add the JPanel object to the JFrame
 a.add(b);  
@@ -40,7 +41,7 @@ a.pack();
 		//11. Run your program again. Do you see your message.
 		//yes
 		//12. Use the loadImage method to set the icon of the JLabel object.  
-loadImage();
+c.setIcon(loadImage());
 	
 
 		//13. Re-pack the JFrame object.
@@ -54,6 +55,7 @@ loadImage();
 		} catch (IOException e) {
 			
 			return null;
+	
 		}
 	}
 }
